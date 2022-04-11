@@ -26,7 +26,7 @@ public class CharacterMovementBehaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        _rigidbody.SetDensity(100);
         //_moveDirection = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
         //_rigidbody.MovePosition(transform.position + MoveDirection * 50 * Time.fixedDeltaTime);
