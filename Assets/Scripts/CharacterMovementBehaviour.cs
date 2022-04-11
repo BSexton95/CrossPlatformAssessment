@@ -26,6 +26,7 @@ public class CharacterMovementBehaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         //_moveDirection = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
         //_rigidbody.MovePosition(transform.position + MoveDirection * 50 * Time.fixedDeltaTime);
@@ -43,7 +44,7 @@ public class CharacterMovementBehaviour : MonoBehaviour
             //...find the direction to move in and set the velocity
             Vector3 direction = (hitInfo.point - transform.position).normalized;
             direction = new Vector3(direction.x, 0, direction.z);
-            _rigidbody.velocity = direction * 150 * Time.fixedDeltaTime;
+            _rigidbody.velocity = direction * 250 * Time.fixedDeltaTime;
         }
 
         //RaycastHit hitInfo;
