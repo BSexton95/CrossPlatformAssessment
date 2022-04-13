@@ -1,34 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GoalBehaviour : MonoBehaviour
 {
-    private string _ownerTag;
     [SerializeField]
-    private GameObject _player;
+    private Text _vitoryText;
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Finish"))
+    //        _vitoryText.enabled = true;
+    //}
 
-    public string OwnerTag
-    {
-        get { return _ownerTag; }
-        set { _ownerTag = value; }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        print("Worked");
-        Application.Quit();
-            
-    }
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        Debug.Log("Worked");
+        print("Worked");
+        ;
         
     }
 }
