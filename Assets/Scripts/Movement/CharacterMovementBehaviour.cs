@@ -43,7 +43,7 @@ public class CharacterMovementBehaviour : MonoBehaviour
                 //...find the direction to move in and set the velocity
                 Vector3 direction = (hitInfo.point - transform.position).normalized;
                 direction = new Vector3(direction.x, 0, direction.z);
-                _rigidbody.AddForce( direction * 150 * Time.fixedDeltaTime, ForceMode.Acceleration);
+                _rigidbody.AddForce( direction * 100 * Time.fixedDeltaTime, ForceMode.Acceleration);
                 
             }
         }
