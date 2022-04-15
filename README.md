@@ -17,5 +17,9 @@ When the mouse pointer or finger are placed in front of an obstacle it can cause
 An example, if you are moving forward and the pointer or finger is placed on an obstacle the ball will stop moving or
 move backs rather than forward.
 
+## Credit
+Assets that were used for the obstacles on the track were taken from the assets provided by the instructors from the game
+jam assets folder.
+
 ## Link to WebGL
 https://bsexton95.github.io/CrossPlatformAssessment/Player
