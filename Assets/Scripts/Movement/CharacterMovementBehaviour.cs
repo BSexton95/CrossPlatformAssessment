@@ -8,9 +8,8 @@ public class CharacterMovementBehaviour : MonoBehaviour
     private Rigidbody _rigidbody;
     private Camera _camera;
     private Vector2 _moveDirection;
-    //[SerializeField]
-    //private Text _distanceTravledText;
 
+    //A vector pointing in the direction the character is moving
     public Vector2 MoveDirection
     {
         get { return _moveDirection; }
