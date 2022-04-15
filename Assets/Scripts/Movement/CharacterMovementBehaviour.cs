@@ -28,6 +28,7 @@ public class CharacterMovementBehaviour : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //If left click is pressed...
         if (Input.GetMouseButton(0))
         {
             //A ray cast from the camera using the mouse position

@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallDetectionBehaviour : MonoBehaviour
 {
     [SerializeField]
-    GameObject _player;
+    private GameObject _player;
 
     // Update is called once per frame
     void Update()
