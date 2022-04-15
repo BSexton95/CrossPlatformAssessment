@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Loads the next scene
     public void LoadGame()
     {
         //Loads The next scene in the builds queue when the play button is hit
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    //Closes the application
     public void ExitApplication()
     {
         Debug.Log("Quit!");
