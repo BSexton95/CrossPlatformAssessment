@@ -39,9 +39,10 @@ public class CharacterMovementBehaviour : MonoBehaviour
             if (Physics.Raycast(ray, out hitInfo))
             {
 
-                //...find the direction to move in and set the velocity
+                //...find the direction to move in
                 Vector3 direction = (hitInfo.point - transform.position).normalized;
                 direction = new Vector3(direction.x, 0, direction.z);
+                //Add force to the rigidbody
                 _rigidbody.AddForce( direction * 100 * Time.fixedDeltaTime, ForceMode.Acceleration);
                 
             }
